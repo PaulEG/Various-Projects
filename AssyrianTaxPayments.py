@@ -1,3 +1,8 @@
+#The Assyrian state was composed of 27 provinces, each of which had to sumbit a fixed quota of four canonical commidities every year.
+#Provinces frequently only paid a portion of their assessment. Since many of the provinces are of unclear location, one would like a
+#way to calculate how similar the payment histories of any two provinces were. This program takes as imputs files containing all
+#available payment data from a given province and then compares the precentage of each commodity paid by the two provinces using a 
+#euclidian norm.
 from math import sqrt
 def getPairs(filename1, filename2, com, assessments1, assessments2):
     infile1 = open(filename1, 'r')
